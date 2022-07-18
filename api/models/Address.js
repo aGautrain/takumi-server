@@ -1,7 +1,7 @@
 /**
- * Gas.js
+ * Address.js
  *
- * @description :: Gas is a synonym for blockchain transaction fees
+ * @description :: Address allows us to memorize owned assets
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
  */
 
@@ -13,38 +13,13 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-    symbol: {
+    address: {
       type: 'string',
       unique: true,
       required: true
     },
 
-    avgGas: {
-      type: 'number'
-    },
-
-    avgTime: {
-      type: 'number'
-    },
-
-    avgTx: {
-      type: 'number'
-    },
-
-    baseFee: {
-      type: 'number'
-    },
-
-    lastBlock: {
-      type: 'number'
-    },
-
-    // array describing low to fast transaction costs
-    speeds: {
-      type: 'json'
-    },
-
-    timestamp: {
+    label: {
       type: 'string'
     },
 
@@ -58,9 +33,8 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
-    crypto: {
-      model: 'Cryptocurrency',
-      unique: true
+    assets: {
+      collection: 'Cryptocurrency'
     }
 
   },
