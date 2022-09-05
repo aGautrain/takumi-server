@@ -392,6 +392,16 @@ module.exports = {
 
   },
 
+  apiKeys: {
+    owlracle: '',
+    coinmarket: '50ec345e-bc25-4a84-b481-919f35f5c14e',
+    etherscan: '4MG3ZZY551H1JY5B2GF1E7IM5SB13TRJ3Y',
+    snowtrace: '31VXNYQDQ7UHGZPEP2WZINIR3Y9MICIIM9',
+    ftmscan: 'C6JUPW63TEGCS159DGXWRA2KCQMT3UWRDG',
+    bscScan: 'QGG8FMRP1MP932GXP7YQF7VQGFHYWHC6KM',
+    polygon: 'TBFUNSE7YICH49AVYU5ZQ5I65MXAVVFW8E',
+  }
+
 
 
 };

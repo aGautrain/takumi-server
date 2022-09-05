@@ -16,7 +16,7 @@ module.exports = {
     symbol: {
       type: 'string',
       unique: true,
-      required: true
+      required: true,
     },
 
     avgGas: {
@@ -58,12 +58,13 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    /*
     crypto: {
       model: 'Cryptocurrency',
-      unique: true
+      unique: false
     }
+    */
 
   },
 
 };
-

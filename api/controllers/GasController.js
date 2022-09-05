@@ -24,6 +24,7 @@ module.exports = {
 
         const symbol = req.param('symbol');
         const owlracleSymbol = symbolConverterForOwlracle[symbol];
+        sails.log.info(owlracleSymbol);
 
         if (!owlracleSymbol) sails.log.error('unsupported symbol, cannot return gas');
 
@@ -50,8 +51,9 @@ module.exports = {
         return axios
             .get(apiEndpoint, { params: { apikey: '' } })
             .then(async owlracleResponse => {
-                if (owlracleResponse?.data) sails.log.info(owlracleResponse.data);
-                else return res.badRequest();
+                if (owlracleResponse?.data) {
+                  // sails.log.info(owlracleResponse.data);
+                } else return res.badRequest();
 
                 const gasToStore = {
                     ...owlracleResponse.data,
@@ -60,7 +62,7 @@ module.exports = {
 
                 await Gas.create(gasToStore);
 
-                sails.log.info('Returning latest gas', gasToStore);
+                // sails.log.info('Returning latest gas', gasToStore);
 
 
                 return res.json(gasToStore);
@@ -74,4 +76,3 @@ module.exports = {
 
 
 };
-

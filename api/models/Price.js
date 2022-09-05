@@ -13,13 +13,6 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-
-    id: {
-      type: 'number',
-      unique: true,
-      required: true
-    },
-
     circulating_supply: {
       type: 'number'
     },
@@ -95,11 +88,12 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    /*
     crypto: {
       model: 'Cryptocurrency'
     },
+    */
 
   },
 
 };
-

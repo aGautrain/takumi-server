@@ -21,7 +21,8 @@ module.exports.routes = {
 
   '/': { view: 'pages/homepage' },
 
-  'GET /getGas': { action: 'gas/getGas' }
+  'GET /getGas': { action: 'gas/getGas' },
+  'GET /getWallet': { action: 'wallet/getWallet' }
 
 
   /***************************************************************************

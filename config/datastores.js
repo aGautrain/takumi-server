@@ -51,6 +51,18 @@ module.exports.datastores = {
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
 
+    /*
+    Execute this inside mongo shell
+
+    use admin
+    db.createUser({ user: "sails" , pwd: "sailsRandomPassword$333", roles: ["userAdminAnyDatabase", "dbAdminAnyDatabase", "readWriteAnyDatabase"]})
+
+    */
+
+    adapter: 'sails-mongo',
+    url: 'mongodb://sails:sailsRandomPassword$333@localhost:27017/admin'
+
+
   },
 
 

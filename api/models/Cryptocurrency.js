@@ -20,12 +20,6 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-    id: {
-      type: 'number',
-      unique: true,
-      required: true
-    },
-
     // coin, token, etc.
     category: {
       type: 'string'
@@ -92,7 +86,7 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-
+    /*
     gas: {
       collection: 'Gas',
       via: 'crypto'
@@ -102,8 +96,8 @@ module.exports = {
       collection: 'Price',
       via: 'crypto'
     }
+    */
 
   },
 
 };
-
